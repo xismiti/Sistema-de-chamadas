@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body, #root{
+    height: 100vh;
+}
+
+body{
+    background-color: #efefef;
+    font-family: sans-serif;
+    font: 14px;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+button{
+    cursor: pointer;
+}
