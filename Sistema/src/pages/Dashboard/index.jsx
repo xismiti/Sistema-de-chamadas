@@ -1,5 +1,10 @@
 import { AuthContext } from "../../contexts/auth";
 import { useContext } from "react";
+import { FiHome } from "react-icons/fi";
+import "./dashboard.css";
+
+import Title from "../../components/Title";
+
 import Header from "../../components/Header";
 export default function Dashboard() {
   const { logout } = useContext(AuthContext);
@@ -10,8 +15,9 @@ export default function Dashboard() {
   return (
     <div>
       <Header />
-      <h1>Dashboard de cria</h1>
-      <span>de crias</span>
+      <Title name="Chamados">
+        <FiHome size={24} />
+      </Title>
 
       <button onClick={handleLogout}>Sair</button>
     </div>
